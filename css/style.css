@@ -1,0 +1,252 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Shippori Mincho", serif;
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+section {
+  padding: 9rem 0 6rem;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  height: 64px;
+  margin: 0 auto;
+  line-height: 64px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: block;
+  margin-left: auto;
+}
+
+.sp-menu {
+  margin-left: auto;
+}
+
+.sp-menu #open {
+  font-size: 32px;
+  line-height: 64px;
+  cursor: pointer;
+}
+
+.sp-menu #open.hide {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  padding: 64px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay #close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.overlay ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.overlay li {
+  text-decoration: none;
+  margin-top: 24px;
+  opacity: 0;
+  -webkit-transform: translateY(16px);
+          transform: translateY(16px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+}
+
+.overlay.show li {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.overlay.show li:nth-child(1) {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.overlay.show li:nth-child(2) {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.overlay.show li:nth-child(3) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+.pc-menu {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .pc-menu {
+    display: block;
+    margin-left: auto;
+  }
+  .pc-menu ul {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .pc-menu a {
+    display: block;
+    text-decoration: none;
+    width: 120px;
+    line-height: 64px;
+    text-align: center;
+    color: #333;
+  }
+  .pc-menu a:hover {
+    background: rgb(208, 201, 201);
+    color: white;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .sp-menu {
+    display: none;
+  }
+}
+.fv {
+  padding-top: 25%;
+  background-image: url(../img/main-vsual.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 4.5rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 80%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about img {
+  width: 48%;
+}
+.about p {
+  width: 48%;
+  line-height: 1.7;
+  font-size: 1.6rem;
+}
+
+.course {
+  background-color: #edfaf4;
+}
+.course p {
+  font-size: 1rem;
+}
+
+.img-box {
+  width: 30%;
+}
+.img-box p {
+  padding-top: 1rem;
+}
+
+.contact {
+  text-align: center;
+}
+.contact form {
+  margin-top: 4.5rem;
+}
+.contact form p {
+  line-height: 2;
+  font-size: 1.2rem;
+}
+.contact form #email {
+  width: 35rem;
+  height: 4rem;
+  padding: 1rem;
+  border-radius: 30px;
+  border: 1px solid gray;
+}
+.contact form button {
+  all: unset;
+  display: block;
+  background-color: rgb(243, 67, 35);
+  color: white;
+  font-weight: bold;
+  margin: 1.4rem auto;
+  padding: 2rem 4rem;
+}
+
+footer {
+  padding-right: 4rem;
+  background-color: rgb(14, 14, 65);
+  text-align: right;
+  color: white;
+  line-height: 4rem;
+  font-size: 1rem;
+}/*# sourceMappingURL=style.css.map */

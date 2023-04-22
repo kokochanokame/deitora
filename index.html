@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>デイトラ</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>3Daysトライアル</h1>
+    <div class="pc-menu">
+      <nav>
+        <ul>
+          <li><a href="#about">デイトラとは</a></li>
+          <li><a href="#course">コース一覧</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+   </div>
+   <div class="sp-menu">
+    <span class="material-icons" id="open">menu</span>
+  </div>
+  </header>
+  <div class="overlay">
+    <span class="material-icons" id="close">close</span>
+    <nav>
+      <ul>
+        <li><a href="#about">デイトラとは</a></li>
+        <li><a href="#course">コース一覧</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+  <main>
+    <section class="fv"></section>
+    <section id="about" class="about">
+      <h2>デイトラとは</h1>
+        <div class="wrapper">
+          <img src="img/about.png" alt="デイとらの画像">
+          <p>デイトラとは、無料で、迷わず、楽しく学べるプログラミング学習アプリです。毎日設定された課題をこなしていくだけで未経験から30日でプログラミングスキルが身につきます。<br>1日1題30日でプロのWebエンジニアを目指しましょう！<br>デイトラとは、無料で、迷わず、楽しく学べるプログラミング学習アプリです。毎日設定された課題をこなしていくだけで未経験から30日でプログラミングスキルが身につきます。<br>1日1題30日でプロのWebエンジニアを目指しましょう！</p>
+        </div>
+    </section>
+    <section id="course" class="course">
+      <h2>コース一覧</h2>
+      <div class="wrapper">
+        <div class="img-box">
+          <img src="img/web_first.png" alt="初級コース">
+          <p>HTML/CSS/BootStrap</p>
+        </div>
+        <div class="img-box">
+          <img src="img/web_second.png" alt="中級コース">
+          <p>HTML/CSS/Javascript/jQuery</p>
+        </div>
+        <div class="img-box">
+          <img src="img/web_third.png" alt="上級コース">
+          <p>PHP/Wordpress</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <h2>お問い合わせ</h2>
+      <form action="" method="post">
+        <p>さあ今日から30日間を始めよう！</p>
+        <input  id="email" type="mail" name="mail" placeholder="メールアドレス">
+        <button>無料ではじめる</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <small>Copuright(c) 2020 東京フリーランス</small>
+  </footer>
+</body>
+<script src="js/main.js"></script>
+</html>
